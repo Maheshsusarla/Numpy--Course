@@ -33,3 +33,36 @@
 # print(a.sum(axis=0))
 # print(a.mean(axis=1))
 
+
+
+
+
+import numpy as np
+check the data type
+a=np.array([1,2,3,4])
+print(a.dtype)
+arr = np.array([10.5,20.6,30.7])
+print(arr.dtype)
+arr = np.array(["Apple","Banana","Mango"])
+print(arr.dtype)
+arr = np.array([True,False,True])
+print(arr.dtype)
+
+Creating Array with Specific Data Type
+arr = np.array([1,2,3,4],dtype='S')
+print(arr)
+print(arr.dtype)
+
+copy 
+arr = np.array([1,2,3,4,5])
+x = arr.copy()
+arr[0] = 42
+print(arr)
+print(x)
+print(x.base)
+view
+arr = np.array([1,2,3,4,5])
+x = arr.view()
+x[0] = 31
+print(arr)
+print(x)
